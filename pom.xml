@@ -89,6 +89,12 @@
       <version>4.13.2</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.evosuite</groupId>
+      <artifactId>evosuite-standalone-runtime</artifactId>
+      <version>${evosuite.version}</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <properties>
     <!-- project.build.outputTimestamp is managed by Maven plugins, see https://maven.apache.org/guides/mini/guide-reproducible-builds.html -->
@@ -117,6 +123,7 @@
     <commons.jacoco.branchRatio>0.95</commons.jacoco.branchRatio>
     <commons.jacoco.lineRatio>0.98</commons.jacoco.lineRatio>
     <commons.jacoco.complexityRatio>0.94</commons.jacoco.complexityRatio>
+    <evosuite.version>1.0.6</evosuite.version>
   </properties>
   <build>
     <defaultGoal>clean verify apache-rat:check japicmp:cmp checkstyle:check spotbugs:check pmd:check javadoc:javadoc</defaultGoal>
@@ -207,8 +214,40 @@
           </dependency>
         </dependencies>
       </plugin>
+      <plugin>
+        <groupId>org.evosuite.plugins</groupId>
+        <artifactId>evosuite-maven-plugin</artifactId>
+        <version>${evosuite.version}</version>
+        <executions>
+        <!-- prepares the runtime listener so EvoSuite tests run with surefire -->
+        <execution>
+        <goals><goal>prepare</goal></goals>
+        <phase>process-test-classes</phase>
+        </execution>
+        </executions>
+        </plugin>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+        <configuration>
+        <properties>
+        <property>
+        <name>listener</name>
+        <value>org.evosuite.runtime.InitializingListener</value>
+        </property>
+        </properties>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>EvoSuite</id>
+      <name>EvoSuite Repository</name>
+      <url>https://www.evosuite.org/m2</url>
+    </pluginRepository>
+  </pluginRepositories>
   <reporting>
     <plugins>
       <plugin>

@@ -1,0 +1,10 @@
+[MASTER] 17:49:05.722 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for java.util.HashMap<K, V> : Type points to itself
+[MASTER] 17:49:39.212 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.dynamic.loading.ByteArrayClassLoader: null
+[MASTER] 17:49:39.288 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.build.HashCodeAndEqualsPlugin: null
+[MASTER] 17:49:39.325 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.implementation.EqualsMethod: Could not initialize class net.bytebuddy.description.type.TypeDescription$ForLoadedType
+[MASTER] 17:49:39.331 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.implementation.HashCodeMethod: Could not initialize class net.bytebuddy.description.type.TypeDescription$ForLoadedType
+[MASTER] 17:49:39.507 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.implementation.HashCodeMethod: null
+[MASTER] 17:49:39.526 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.build.HashCodeAndEqualsPlugin: Could not initialize class net.bytebuddy.description.type.TypeDescription$ForLoadedType
+[MASTER] 17:49:39.528 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.utility.JavaModule: Could not initialize class net.bytebuddy.utility.JavaModule
+[MASTER] 17:49:39.543 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.description.type.TypeDefinition$Sort: null
+[MASTER] 17:49:39.544 [pool-2-thread-1] ERROR ClassStateSupport - Could not initialize net.bytebuddy.description.type.TypeDescription$ForLoadedType: Could not initialize class net.bytebuddy.description.type.TypeDescription$ForLoadedType

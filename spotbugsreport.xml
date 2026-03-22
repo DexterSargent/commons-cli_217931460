@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.9.8" sequence="0" timestamp="1774199792555" analysisTimestamp="1774210003871" release="">
+  <Project projectName="Apache Commons CLI">
+    <Jar>/Users/dextersargent/commons-cli_217931460/target/classes</Jar>
+    <SrcDir>/Users/dextersargent/commons-cli_217931460/src/main/java</SrcDir>
+    <WrkDir>/Users/dextersargent/commons-cli_217931460/target</WrkDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.AlreadySelectedException">
+      <SourceLine classname="org.apache.commons.cli.AlreadySelectedException" start="44" end="80" sourcefile="AlreadySelectedException.java" sourcepath="org/apache/commons/cli/AlreadySelectedException.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.AlreadySelectedException" name="getOption" signature="()Lorg/apache/commons/cli/Option;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.AlreadySelectedException" start="70" end="70" startBytecode="0" endBytecode="46" sourcefile="AlreadySelectedException.java" sourcepath="org/apache/commons/cli/AlreadySelectedException.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.AlreadySelectedException" name="option" signature="Lorg/apache/commons/cli/Option;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.AlreadySelectedException" sourcefile="AlreadySelectedException.java" sourcepath="org/apache/commons/cli/AlreadySelectedException.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.AlreadySelectedException" start="70" end="70" startBytecode="4" endBytecode="4" sourcefile="AlreadySelectedException.java" sourcepath="org/apache/commons/cli/AlreadySelectedException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.AlreadySelectedException">
+      <SourceLine classname="org.apache.commons.cli.AlreadySelectedException" start="44" end="80" sourcefile="AlreadySelectedException.java" sourcepath="org/apache/commons/cli/AlreadySelectedException.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.AlreadySelectedException" name="getOptionGroup" signature="()Lorg/apache/commons/cli/OptionGroup;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.AlreadySelectedException" start="80" end="80" startBytecode="0" endBytecode="46" sourcefile="AlreadySelectedException.java" sourcepath="org/apache/commons/cli/AlreadySelectedException.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.AlreadySelectedException" name="optionGroup" signature="Lorg/apache/commons/cli/OptionGroup;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.AlreadySelectedException" sourcefile="AlreadySelectedException.java" sourcepath="org/apache/commons/cli/AlreadySelectedException.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.AlreadySelectedException" start="80" end="80" startBytecode="4" endBytecode="4" sourcefile="AlreadySelectedException.java" sourcepath="org/apache/commons/cli/AlreadySelectedException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.AmbiguousOptionException">
+      <SourceLine classname="org.apache.commons.cli.AmbiguousOptionException" start="43" end="79" sourcefile="AmbiguousOptionException.java" sourcepath="org/apache/commons/cli/AmbiguousOptionException.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.AmbiguousOptionException" name="getMatchingOptions" signature="()Ljava/util/Collection;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.AmbiguousOptionException" start="79" end="79" startBytecode="0" endBytecode="46" sourcefile="AmbiguousOptionException.java" sourcepath="org/apache/commons/cli/AmbiguousOptionException.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.AmbiguousOptionException" name="matchingOptions" signature="Ljava/util/Collection;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.AmbiguousOptionException" sourcefile="AmbiguousOptionException.java" sourcepath="org/apache/commons/cli/AmbiguousOptionException.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.AmbiguousOptionException" start="79" end="79" startBytecode="4" endBytecode="4" sourcefile="AmbiguousOptionException.java" sourcepath="org/apache/commons/cli/AmbiguousOptionException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.AmbiguousOptionException">
+      <SourceLine classname="org.apache.commons.cli.AmbiguousOptionException" start="43" end="79" sourcefile="AmbiguousOptionException.java" sourcepath="org/apache/commons/cli/AmbiguousOptionException.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.AmbiguousOptionException" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/util/Collection;)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.AmbiguousOptionException" start="69" end="71" startBytecode="0" endBytecode="103" sourcefile="AmbiguousOptionException.java" sourcepath="org/apache/commons/cli/AmbiguousOptionException.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.AmbiguousOptionException" name="matchingOptions" signature="Ljava/util/Collection;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.AmbiguousOptionException" sourcefile="AmbiguousOptionException.java" sourcepath="org/apache/commons/cli/AmbiguousOptionException.java"/>
+    </Field>
+    <LocalVariable name="matchingOptions" register="2" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.cli.AmbiguousOptionException" start="70" end="70" startBytecode="12" endBytecode="12" sourcefile="AmbiguousOptionException.java" sourcepath="org/apache/commons/cli/AmbiguousOptionException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.CommandLine">
+      <SourceLine classname="org.apache.commons.cli.CommandLine" start="41" end="1042" sourcefile="CommandLine.java" sourcepath="org/apache/commons/cli/CommandLine.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.CommandLine" name="getArgList" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.CommandLine" start="222" end="222" startBytecode="0" endBytecode="46" sourcefile="CommandLine.java" sourcepath="org/apache/commons/cli/CommandLine.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.CommandLine" name="args" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.CommandLine" sourcefile="CommandLine.java" sourcepath="org/apache/commons/cli/CommandLine.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.CommandLine" start="222" end="222" startBytecode="4" endBytecode="4" sourcefile="CommandLine.java" sourcepath="org/apache/commons/cli/CommandLine.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.DefaultParser">
+      <SourceLine classname="org.apache.commons.cli.DefaultParser" start="35" end="868" sourcefile="DefaultParser.java" sourcepath="org/apache/commons/cli/DefaultParser.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.DefaultParser" name="parse" signature="(Lorg/apache/commons/cli/Options;Ljava/util/Properties;Lorg/apache/commons/cli/DefaultParser$NonOptionAction;[Ljava/lang/String;)Lorg/apache/commons/cli/CommandLine;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.DefaultParser" start="756" end="776" startBytecode="0" endBytecode="357" sourcefile="DefaultParser.java" sourcepath="org/apache/commons/cli/DefaultParser.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.DefaultParser" name="cmd" signature="Lorg/apache/commons/cli/CommandLine;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.DefaultParser" sourcefile="DefaultParser.java" sourcepath="org/apache/commons/cli/DefaultParser.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.DefaultParser" start="776" end="776" startBytecode="163" endBytecode="163" sourcefile="DefaultParser.java" sourcepath="org/apache/commons/cli/DefaultParser.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.HelpFormatter" name="createDefaultPrintWriter" signature="()Ljava/io/PrintWriter;" isStatic="true">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="232" end="232" startBytecode="0" endBytecode="34" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="132" end="133" startBytecode="0" endBytecode="62" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="232" end="232" startBytecode="7" endBytecode="7" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE" priority="2" rank="16" abbrev="PA" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Field classname="org.apache.commons.cli.HelpFormatter" name="defaultArgName" signature="Ljava/lang/String;" isStatic="false" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="308" end="308" startBytecode="48" endBytecode="48" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE" priority="2" rank="16" abbrev="PA" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Field classname="org.apache.commons.cli.HelpFormatter" name="defaultDescPad" signature="I" isStatic="false" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="268" end="268" startBytecode="17" endBytecode="17" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE" priority="2" rank="16" abbrev="PA" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Field classname="org.apache.commons.cli.HelpFormatter" name="defaultLeftPad" signature="I" isStatic="false" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="260" end="260" startBytecode="12" endBytecode="12" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE" priority="2" rank="16" abbrev="PA" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Field classname="org.apache.commons.cli.HelpFormatter" name="defaultLongOptPrefix" signature="Ljava/lang/String;" isStatic="false" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="300" end="300" startBytecode="42" endBytecode="42" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE" priority="2" rank="16" abbrev="PA" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Field classname="org.apache.commons.cli.HelpFormatter" name="defaultNewLine" signature="Ljava/lang/String;" isStatic="false" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="285" end="285" startBytecode="30" endBytecode="30" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE" priority="2" rank="16" abbrev="PA" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Field classname="org.apache.commons.cli.HelpFormatter" name="defaultOptPrefix" signature="Ljava/lang/String;" isStatic="false" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="292" end="292" startBytecode="36" endBytecode="36" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE" priority="2" rank="16" abbrev="PA" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Field classname="org.apache.commons.cli.HelpFormatter" name="defaultSyntaxPrefix" signature="Ljava/lang/String;" isStatic="false" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="276" end="276" startBytecode="23" endBytecode="23" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="PA_PUBLIC_PRIMITIVE_ATTRIBUTE" priority="2" rank="16" abbrev="PA" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.HelpFormatter" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="74" end="1098" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Class>
+    <Field classname="org.apache.commons.cli.HelpFormatter" name="defaultWidth" signature="I" isStatic="false" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.HelpFormatter" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.HelpFormatter" start="252" end="252" startBytecode="7" endBytecode="7" sourcefile="HelpFormatter.java" sourcepath="org/apache/commons/cli/HelpFormatter.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.MissingArgumentException">
+      <SourceLine classname="org.apache.commons.cli.MissingArgumentException" start="40" end="60" sourcefile="MissingArgumentException.java" sourcepath="org/apache/commons/cli/MissingArgumentException.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.MissingArgumentException" name="getOption" signature="()Lorg/apache/commons/cli/Option;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.MissingArgumentException" start="60" end="60" startBytecode="0" endBytecode="46" sourcefile="MissingArgumentException.java" sourcepath="org/apache/commons/cli/MissingArgumentException.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.MissingArgumentException" name="option" signature="Lorg/apache/commons/cli/Option;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.MissingArgumentException" sourcefile="MissingArgumentException.java" sourcepath="org/apache/commons/cli/MissingArgumentException.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.MissingArgumentException" start="60" end="60" startBytecode="4" endBytecode="4" sourcefile="MissingArgumentException.java" sourcepath="org/apache/commons/cli/MissingArgumentException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.MissingArgumentException">
+      <SourceLine classname="org.apache.commons.cli.MissingArgumentException" start="40" end="60" sourcefile="MissingArgumentException.java" sourcepath="org/apache/commons/cli/MissingArgumentException.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.MissingArgumentException" name="&lt;init&gt;" signature="(Lorg/apache/commons/cli/Option;)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.MissingArgumentException" start="40" end="42" startBytecode="0" endBytecode="91" sourcefile="MissingArgumentException.java" sourcepath="org/apache/commons/cli/MissingArgumentException.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.MissingArgumentException" name="option" signature="Lorg/apache/commons/cli/Option;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.MissingArgumentException" sourcefile="MissingArgumentException.java" sourcepath="org/apache/commons/cli/MissingArgumentException.java"/>
+    </Field>
+    <LocalVariable name="option" register="1" pc="28" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.cli.MissingArgumentException" start="41" end="41" startBytecode="28" endBytecode="28" sourcefile="MissingArgumentException.java" sourcepath="org/apache/commons/cli/MissingArgumentException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.MissingOptionException">
+      <SourceLine classname="org.apache.commons.cli.MissingOptionException" start="36" end="73" sourcefile="MissingOptionException.java" sourcepath="org/apache/commons/cli/MissingOptionException.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.MissingOptionException" name="getMissingOptions" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.MissingOptionException" start="73" end="73" startBytecode="0" endBytecode="46" sourcefile="MissingOptionException.java" sourcepath="org/apache/commons/cli/MissingOptionException.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.MissingOptionException" name="missingOptions" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.MissingOptionException" sourcefile="MissingOptionException.java" sourcepath="org/apache/commons/cli/MissingOptionException.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.MissingOptionException" start="73" end="73" startBytecode="4" endBytecode="4" sourcefile="MissingOptionException.java" sourcepath="org/apache/commons/cli/MissingOptionException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.MissingOptionException">
+      <SourceLine classname="org.apache.commons.cli.MissingOptionException" start="36" end="73" sourcefile="MissingOptionException.java" sourcepath="org/apache/commons/cli/MissingOptionException.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.MissingOptionException" name="&lt;init&gt;" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.MissingOptionException" start="52" end="54" startBytecode="0" endBytecode="73" sourcefile="MissingOptionException.java" sourcepath="org/apache/commons/cli/MissingOptionException.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.MissingOptionException" name="missingOptions" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.MissingOptionException" sourcefile="MissingOptionException.java" sourcepath="org/apache/commons/cli/MissingOptionException.java"/>
+    </Field>
+    <LocalVariable name="missingOptions" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="org.apache.commons.cli.MissingOptionException" start="53" end="53" startBytecode="10" endBytecode="10" sourcefile="MissingOptionException.java" sourcepath="org/apache/commons/cli/MissingOptionException.java"/>
+  </BugInstance>
+  <BugInstance type="CT_CONSTRUCTOR_THROW" priority="2" rank="16" abbrev="CT" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.Option">
+      <SourceLine classname="org.apache.commons.cli.Option" start="41" end="1028" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.Option" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.Option" start="477" end="478" startBytecode="0" endBytecode="74" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.cli.Option" start="477" end="477" startBytecode="5" endBytecode="5" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    <SourceLine classname="org.apache.commons.cli.Option" start="477" end="477" startBytecode="5" endBytecode="5" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+  </BugInstance>
+  <BugInstance type="CT_CONSTRUCTOR_THROW" priority="2" rank="16" abbrev="CT" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.Option">
+      <SourceLine classname="org.apache.commons.cli.Option" start="41" end="1028" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.Option" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.Option" start="489" end="499" startBytecode="0" endBytecode="209" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.cli.Option" start="492" end="492" startBytecode="33" endBytecode="33" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    <SourceLine classname="org.apache.commons.cli.Option" start="492" end="492" startBytecode="33" endBytecode="33" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+  </BugInstance>
+  <BugInstance type="CT_CONSTRUCTOR_THROW" priority="2" rank="16" abbrev="CT" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.Option">
+      <SourceLine classname="org.apache.commons.cli.Option" start="41" end="1028" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.Option" name="&lt;init&gt;" signature="(Ljava/lang/String;ZLjava/lang/String;)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.Option" start="466" end="467" startBytecode="0" endBytecode="84" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.cli.Option" start="466" end="466" startBytecode="5" endBytecode="5" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    <SourceLine classname="org.apache.commons.cli.Option" start="466" end="466" startBytecode="5" endBytecode="5" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+  </BugInstance>
+  <BugInstance type="CT_CONSTRUCTOR_THROW" priority="2" rank="16" abbrev="CT" category="BAD_PRACTICE">
+    <Class classname="org.apache.commons.cli.Option">
+      <SourceLine classname="org.apache.commons.cli.Option" start="41" end="1028" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.Option" name="&lt;init&gt;" signature="(Lorg/apache/commons/cli/Option$Builder;)V" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.Option" start="439" end="455" startBytecode="0" endBytecode="291" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Method>
+    <SourceLine classname="org.apache.commons.cli.Option" start="441" end="441" startBytecode="49" endBytecode="49" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    <SourceLine classname="org.apache.commons.cli.Option" start="441" end="441" startBytecode="49" endBytecode="49" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.Option">
+      <SourceLine classname="org.apache.commons.cli.Option" start="41" end="1028" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.Option" name="getValuesList" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.Option" start="747" end="747" startBytecode="0" endBytecode="46" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.Option" name="values" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.Option" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.Option" start="747" end="747" startBytecode="4" endBytecode="4" sourcefile="Option.java" sourcepath="org/apache/commons/cli/Option.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.Parser" classAnnotationNames="java.lang.Deprecated">
+      <SourceLine classname="org.apache.commons.cli.Parser" start="49" end="336" sourcefile="Parser.java" sourcepath="org/apache/commons/cli/Parser.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.Parser" name="parse" signature="(Lorg/apache/commons/cli/Options;[Ljava/lang/String;Ljava/util/Properties;Z)Lorg/apache/commons/cli/CommandLine;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.Parser" start="153" end="206" startBytecode="0" endBytecode="671" sourcefile="Parser.java" sourcepath="org/apache/commons/cli/Parser.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.Parser" name="cmd" signature="Lorg/apache/commons/cli/CommandLine;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.Parser" sourcefile="Parser.java" sourcepath="org/apache/commons/cli/Parser.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.Parser" start="206" end="206" startBytecode="289" endBytecode="289" sourcefile="Parser.java" sourcepath="org/apache/commons/cli/Parser.java"/>
+  </BugInstance>
+  <BugInstance type="SING_SINGLETON_HAS_NONPRIVATE_CONSTRUCTOR" priority="2" rank="7" abbrev="SING" category="CORRECTNESS">
+    <Class classname="org.apache.commons.cli.TypeHandler">
+      <SourceLine classname="org.apache.commons.cli.TypeHandler" start="45" end="279" sourcefile="TypeHandler.java" sourcepath="org/apache/commons/cli/TypeHandler.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.TypeHandler" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.TypeHandler" start="253" end="254" startBytecode="0" endBytecode="53" sourcefile="TypeHandler.java" sourcepath="org/apache/commons/cli/TypeHandler.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="org.apache.commons.cli.help.AbstractHelpFormatter">
+      <SourceLine classname="org.apache.commons.cli.help.AbstractHelpFormatter" start="170" end="494" sourcefile="AbstractHelpFormatter.java" sourcepath="org/apache/commons/cli/help/AbstractHelpFormatter.java"/>
+    </Class>
+    <Method classname="org.apache.commons.cli.help.AbstractHelpFormatter" name="getSerializer" signature="()Lorg/apache/commons/cli/help/HelpAppendable;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.help.AbstractHelpFormatter" start="267" end="267" startBytecode="0" endBytecode="46" sourcefile="AbstractHelpFormatter.java" sourcepath="org/apache/commons/cli/help/AbstractHelpFormatter.java"/>
+    </Method>
+    <Field classname="org.apache.commons.cli.help.AbstractHelpFormatter" name="helpAppendable" signature="Lorg/apache/commons/cli/help/HelpAppendable;" isStatic="false">
+      <SourceLine classname="org.apache.commons.cli.help.AbstractHelpFormatter" sourcefile="AbstractHelpFormatter.java" sourcepath="org/apache/commons/cli/help/AbstractHelpFormatter.java"/>
+    </Field>
+    <SourceLine classname="org.apache.commons.cli.help.AbstractHelpFormatter" start="267" end="267" startBytecode="4" endBytecode="4" sourcefile="AbstractHelpFormatter.java" sourcepath="org/apache/commons/cli/help/AbstractHelpFormatter.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sun, 22 Mar 2026 13:16:32 -0400" total_classes="56" referenced_classes="174" total_bugs="27" total_size="2944" num_packages="2" java_version="21.0.6" vm_version="21.0.6+7-LTS" cpu_seconds="9.76" clock_seconds="101.54" peak_mbytes="169.34" alloc_mbytes="512.00" gc_seconds="0.01" priority_2="26" priority_1="1">
+    <PackageStats package="org.apache.commons.cli" total_bugs="26" total_types="38" total_size="2131" priority_2="25" priority_1="1">
+      <ClassStats class="org.apache.commons.cli.AlreadySelectedException" sourceFile="AlreadySelectedException.java" interface="false" size="20" bugs="2" priority_2="2"/>
+      <ClassStats class="org.apache.commons.cli.AmbiguousOptionException" sourceFile="AmbiguousOptionException.java" interface="false" size="22" bugs="2" priority_2="2"/>
+      <ClassStats class="org.apache.commons.cli.BasicParser" sourceFile="BasicParser.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.Char" sourceFile="Char.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.CommandLine" sourceFile="CommandLine.java" interface="false" size="225" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.cli.CommandLine$1" sourceFile="CommandLine.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.CommandLine$Builder" sourceFile="CommandLine.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.CommandLineParser" sourceFile="CommandLineParser.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.Converter" sourceFile="Converter.java" interface="true" size="24" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.DefaultParser" sourceFile="DefaultParser.java" interface="false" size="273" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.cli.DefaultParser$1" sourceFile="DefaultParser.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.DefaultParser$Builder" sourceFile="DefaultParser.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.DefaultParser$NonOptionAction" sourceFile="DefaultParser.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.DeprecatedAttributes" sourceFile="DeprecatedAttributes.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.DeprecatedAttributes$1" sourceFile="DeprecatedAttributes.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.DeprecatedAttributes$Builder" sourceFile="DeprecatedAttributes.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.GnuParser" sourceFile="GnuParser.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.HelpFormatter" sourceFile="HelpFormatter.java" interface="false" size="324" bugs="9" priority_2="8" priority_1="1"/>
+      <ClassStats class="org.apache.commons.cli.HelpFormatter$1" sourceFile="HelpFormatter.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.HelpFormatter$Builder" sourceFile="HelpFormatter.java" interface="false" size="28" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.HelpFormatter$OptionComparator" sourceFile="HelpFormatter.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.MissingArgumentException" sourceFile="MissingArgumentException.java" interface="false" size="12" bugs="2" priority_2="2"/>
+      <ClassStats class="org.apache.commons.cli.MissingOptionException" sourceFile="MissingOptionException.java" interface="false" size="17" bugs="2" priority_2="2"/>
+      <ClassStats class="org.apache.commons.cli.Option" sourceFile="Option.java" interface="false" size="220" bugs="5" priority_2="5"/>
+      <ClassStats class="org.apache.commons.cli.Option$1" sourceFile="Option.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.Option$Builder" sourceFile="Option.java" interface="false" size="96" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.OptionBuilder" sourceFile="OptionBuilder.java" interface="false" size="98" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.OptionGroup" sourceFile="OptionGroup.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.OptionValidator" sourceFile="OptionValidator.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.Options" sourceFile="Options.java" interface="false" size="99" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.ParseException" sourceFile="ParseException.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.Parser" sourceFile="Parser.java" interface="false" size="120" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.cli.PatternOptionBuilder" sourceFile="PatternOptionBuilder.java" interface="false" size="76" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.PosixParser" sourceFile="PosixParser.java" interface="false" size="80" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.TypeHandler" sourceFile="TypeHandler.java" interface="false" size="65" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.cli.UnrecognizedOptionException" sourceFile="UnrecognizedOptionException.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.Util" sourceFile="Util.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="org.apache.commons.cli.help" total_bugs="1" total_types="18" total_size="813" priority_2="1">
+      <ClassStats class="org.apache.commons.cli.help.AbstractHelpFormatter" sourceFile="AbstractHelpFormatter.java" interface="false" size="108" bugs="1" priority_2="1"/>
+      <ClassStats class="org.apache.commons.cli.help.AbstractHelpFormatter$Builder" sourceFile="AbstractHelpFormatter.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.FilterHelpAppendable" sourceFile="FilterHelpAppendable.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.HelpAppendable" sourceFile="HelpAppendable.java" interface="true" size="12" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.HelpFormatter" sourceFile="HelpFormatter.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.HelpFormatter$Builder" sourceFile="HelpFormatter.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.OptionFormatter" sourceFile="OptionFormatter.java" interface="false" size="106" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.OptionFormatter$1" sourceFile="OptionFormatter.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.OptionFormatter$Builder" sourceFile="OptionFormatter.java" interface="false" size="79" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.TableDefinition" sourceFile="TableDefinition.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.TableDefinition$1" sourceFile="TableDefinition.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.TextHelpAppendable" sourceFile="TextHelpAppendable.java" interface="false" size="199" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.TextStyle" sourceFile="TextStyle.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.TextStyle$1" sourceFile="TextStyle.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.TextStyle$Alignment" sourceFile="TextStyle.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.TextStyle$Builder" sourceFile="TextStyle.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.Util" sourceFile="Util.java" interface="false" size="34" bugs="0"/>
+      <ClassStats class="org.apache.commons.cli.help.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="22" invocations="1" avgMicrosecondsPerInvocation="22754" maxMicrosecondsPerInvocation="22754" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

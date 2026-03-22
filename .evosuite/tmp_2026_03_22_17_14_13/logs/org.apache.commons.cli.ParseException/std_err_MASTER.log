@@ -1,0 +1,6 @@
+[MASTER] 17:47:36.668 [main] ERROR ExternalProcessHandler - Class org.apache.commons.cli.ParseException. Clients have not finished yet, although a timeout occurred.
+ClientNode: SEARCH
+
+[MASTER] 17:47:36.804 [main] ERROR SearchStatistics - No obtained value for output variable: LineCoverage
+[MASTER] 17:47:37.811 [main] ERROR SearchStatistics - Not going to write down statistics data, as some are missing
+[MASTER] 17:47:37.924 [main] ERROR TestGeneration - failed to write statistics data
